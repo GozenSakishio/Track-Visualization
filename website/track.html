@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Person Track </title>
+		<script type="text/javascript" src="libs/d3.js"></script>
+		<script type="text/javascript" src="libs/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="paint.js"></script>
+	</head>
+
+	<body>
+	<div>
+		<input type="button" id="button1" onclick="initialize()" value="init" />
+		<input type="text" name="name" class="txt-com-name" value="" maxlength="100" id="input1" name="input1"/>
+		<input type="button" id="button1" onclick="paintTrack()" value="track" />
+		<input type="button" id="previous" onclick="paintPrevious()" value="previous">
+		</body>
+		<input type="button" id="next" onclick="paintNext()" value="next">
+		<input type="button" id="next" onclick="slowDown()" value="slow down"> 
+		<input type="button" id="next" onclick="speedUp()" value="speed up"> 
+		<div align="left", style="border: 2px; margin-left: 20px">
+			<table style="margin-top: 10px">
+				<tr>
+				<td>Time:</td>
+				<td id = "time" style="width:300px">0</td>
+				<td>Speed:</td>
+				<td id = "step" style="width:100px">0</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id = "current"></div>
+	<div id = "svg_div" style="margin-top: 20px">
+		<svg align = "center">
+		</svg>
+	</div>
+	<div id = "new_div">
+		<svg>
+		</svg>
+	</div>
+	</body>
+
+</html>
